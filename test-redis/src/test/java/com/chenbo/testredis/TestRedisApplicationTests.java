@@ -18,7 +18,7 @@ class TestRedisApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println("c");
+        System.out.println("hello git!");
     }
 
 }
