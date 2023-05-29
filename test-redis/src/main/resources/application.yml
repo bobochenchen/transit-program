@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    username: root
+    password: bobobro1579@
+    url: jdbc:mysql://localhost:3306/salgrade?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#spring:
+#  datasource:
+#    username: postgres
+#    password: Jyyj2021!
+#    url: jdbc:postgresql://10.155.19.16:15432/monitor_waring_center?currentSchema="SCHEMA_NAME"
+#    #    url: jdbc:postgresql://19.191.254.180:15432/monitor_waring_center?currentSchema="SCHEMA_NAME"
+#    driver-class-name: org.postgresql.Driver
+  data:
+    mongodb:
+      #      uri: mongodb://root:Jyyj2021!@19.191.254.180:22081/?authSource=admin
+      uri: mongodb://root:Jyyj2021!@10.155.19.16:22081/?authSource=admin
+      #      host: 19.191.254.180
+      #      host: 10.155.19.16
+      #      port: 22081
+      database: smartv
+  #      username: root
+  #      password: Jyyj2021!
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+server:
+  #  port: 21025
+  port: 9999
+
+  #配置web页面入口
+magic-api:
+  # 以下配置均可省略
+  magic-api:
+    swagger:
+      version: 1.0
+      description: MagicAPI 接口信息
+      title: MagicAPI Swagger Docs
+      name: MagicAPI 接口
+      location: /v2/api-docs/magic-api/swagger2.json
+#  security:
+#    password: Jieyang@2023!
+#    username: jieyang
+  web: /magic/web
+  #配置文件存储位置。当以classpath开头时，为只读模式
+  resource:
+    type: database
+    table-name: magic_api_file
+    #    table-name: public.magic_api_file
+    prefix: /magic-api
+#    location: /Users/worker/magic-api
