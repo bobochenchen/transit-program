@@ -1,7 +1,7 @@
 package com.example.transitprogram.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.transitprogram.RkrltDTO;
+import com.example.transitprogram.dto.RkrltDTO;
 import com.example.transitprogram.service.RkrltService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,6 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 

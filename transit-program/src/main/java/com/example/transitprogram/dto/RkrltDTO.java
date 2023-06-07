@@ -1,4 +1,4 @@
-package com.example.transitprogram;
+package com.example.transitprogram.dto;
 
 import lombok.Data;
 

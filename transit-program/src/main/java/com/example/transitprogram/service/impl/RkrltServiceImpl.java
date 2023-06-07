@@ -18,7 +18,7 @@ public class RkrltServiceImpl implements RkrltService {
     private static final String JOIN = "_";
 
     @Override
-        public JSONObject transitRkrlt(String baseUrl, String AppKey, String AppSercert, String Service, String Method ,HashMap query) {
+    public JSONObject transitRkrlt(String baseUrl, String AppKey, String AppSercert, String Service, String Method ,HashMap query) {
 
         HashMap<String,String> params=new HashMap();
 
