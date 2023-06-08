@@ -69,6 +69,7 @@ public class RkrltServiceImpl implements RkrltService {
      * @return
      */
     private static String createSign(String params, String AppKey,String AppSercert,String service, String method, Long timestamp) {
+        System.out.println("AppSercert"+AppSercert);
         // 以下是系统级约定的url参数
         StringBuilder sb = new StringBuilder();
         sb.append("appKey").append(AppKey).append(JOIN);

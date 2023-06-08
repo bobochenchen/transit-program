@@ -21,6 +21,7 @@ public class TransitController {
 
     @PostMapping("/rkrlt")
     public JSONObject transitRkrlt(@RequestBody RkrltDTO rkrltDTO){
+        System.out.println(rkrltDTO.toString());
         String baseUrl = rkrltDTO.getBaseUrl();
         String appKey = rkrltDTO.getAppKey();
         String method = rkrltDTO.getMethod();
